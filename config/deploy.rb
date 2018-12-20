@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "deploy_test"
-set :repo_url, "git@example.com:gmldbd94/deploy_test.git"
+set :repo_url, "git@github.com:gmldbd94/deploy_test.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -24,7 +24,7 @@ set :deploy_to, "/home/deploy/deploy_test"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
-append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_files, "config/database.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
